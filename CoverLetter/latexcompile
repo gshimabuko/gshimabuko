@@ -1,0 +1,5 @@
+#!/bin/bash
+"${TEXPATH:=./}"
+
+iconv -f ISO_8859-1 -t UTF-8 main.tex -o main_UTF8.tex
+lualatex -synctex=1 -interaction=nonstopmode ./main_UTF8.tex
