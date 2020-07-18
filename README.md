@@ -1,4 +1,4 @@
-https://gshimhesengineering.files.wordpress.com/2020/03/cropped-20200330_162117.jpg
+[(https://gshimhesengineering.files.wordpress.com/2020/03/cropped-20200330_162117.jpg)]
 
 Hi! My name is Guilherme Shimabuko (gshimabuko) and I am an Electrical Engineer
 from Brazil!
