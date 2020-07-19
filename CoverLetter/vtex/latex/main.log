@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/Arch Linux)  (format=lualatex 2020.7.16)  18 JUL 2020 22:23
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/Arch Linux)  (format=lualatex 2020.5.20)  1 JUL 2020 17:55
  restricted system commands enabled.
-**./main_UTF8.tex
-(./main_UTF8.tex
-LaTeX2e <2020-02-02> patch level 5
+**main.tex
+(./main.tex
+LaTeX2e <2019-10-01> patch level 1
 Lua module: luaotfload-main 2020-05-06 3.14 luaotfload entry point
 Lua module: luaotfload-init 2020-05-06 3.14 luaotfload submodule / initializatio
 n
@@ -18,8 +18,8 @@ luaotfload | conf : Root cache directory is "/home/gshimabuko/.texlive/texmf-var
 luaotfload | init : Loading fontloader "fontloader-2020-05-06.lua" from kpse-res
 olved path "/usr/share/texmf-dist/tex/luatex/luaotfload/fontloader-2020-05-06.lu
 a".
-Lua-only attribute luaotfload@noligature = 1
-Lua-only attribute luaotfload@syllabe = 2
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
 luaotfload | init : Context OpenType loader version 0x1.8e353f7ced917p+1
 Lua module: luaotfload-fallback 2020-05-06 3.14 luaotfload submodule / fallback
 Lua module: luaotfload-multiscript 2020-05-06 3.14 luaotfload submodule / multis
@@ -35,22 +35,12 @@ Lua module: luaotfload-database 2020-05-06 3.14 luaotfload submodule / database
 Lua module: luaotfload-unicode 2020-05-06 3.14 luaotfload submodule / Unicode he
 lpers
 Lua module: luaotfload-colors 2020-05-06 3.14 luaotfload submodule / color
-Lua-only attribute luaotfload_color_attribute = 3
+Lua-only attribute luaotfload_color_attribute = 4
 Lua module: luaotfload-resolvers 2020-05-06 3.14 luaotfload submodule / resolver
 s
 luaotfload | conf : Root cache directory is "/home/gshimabuko/.texlive/texmf-var
 /luatex-cache/generic-dev/names".
 Lua module: luaotfload-features 2020-05-06 3.14 luaotfload submodule / features
-Lua module: luaotfload-harf-define 2020-05-06 3.14 luaotfload submodule / databa
-se
-Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_opentype_file'.
-Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_truetype_file'.
-Lua module: luaotfload-harf-plug 2020-05-06 3.14 luaotfload submodule / database
-Inserting `Harf pre_output_filter callback' at position 1 in `pre_output_filter'
-.
-Inserting `Harf wrapup_run callback' at position 1 in `wrapup_run'.
-Inserting `Harf finish_pdffile callback' at position 1 in `finish_pdffile'.
-Inserting `Harf glyph_info callback' at position 1 in `glyph_info'.
 Lua module: luaotfload-letterspace 2020-05-06 3.14 luaotfload submodule / color
 Lua module: luaotfload-embolden 2020-05-06 3.14 luaotfload submodule / color
 Lua module: luaotfload-notdef 2020-05-06 3.14 luaotfload submodule / color
@@ -72,7 +62,7 @@ Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
 Lua module: luaotfload-tounicode 2020-05-06 3.14 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
-. L3 programming layer <2020-06-03> (./twentysecondcv.cls
+. (./twentysecondcv.cls
 Document Class: twentysecondcv 2015/02/28 CV class
 (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -80,23 +70,181 @@ Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
 File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 luaotfload | db : Font names database loaded from /home/gshimabuko/.texlive/texm
 f-var/luatex-cache/generic-dev/names/luaotfload-names.luc)
-\c@part=\count163
-\c@section=\count164
-\c@subsection=\count165
-\c@subsubsection=\count166
-\c@paragraph=\count167
-\c@subparagraph=\count168
-\c@figure=\count169
-\c@table=\count170
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen134
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
 )
 (/usr/share/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2020-06-03 L3 programming layer (loader) 
 
+(/usr/share/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2020-06-03 L3 programming layer (code)
+\c_max_int=\count88
+\l_tmpa_int=\count89
+\l_tmpb_int=\count90
+\g_tmpa_int=\count91
+\g_tmpb_int=\count92
+\l__seq_internal_a_int=\count93
+\l__seq_internal_b_int=\count94
+\g__kernel_prg_map_int=\count95
+\c__ior_term_noprompt_ior=\count96
+\c_log_iow=\count97
+\l_iow_line_count_int=\count98
+\l__iow_line_target_int=\count99
+\l__iow_one_indent_int=\count100
+\l__iow_indent_int=\count101
+\c_zero_dim=\dimen103
+\c_max_dim=\dimen104
+\l_tmpa_dim=\dimen105
+\l_tmpb_dim=\dimen106
+\g_tmpa_dim=\dimen107
+\g_tmpb_dim=\dimen108
+\c_zero_skip=\skip43
+\c_max_skip=\skip44
+\l_tmpa_skip=\skip45
+\l_tmpb_skip=\skip46
+\g_tmpa_skip=\skip47
+\g_tmpb_skip=\skip48
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+\l_keys_choice_int=\count102
+\l__intarray_loop_int=\count103
+\c__intarray_sp_dim=\dimen109
+\g__intarray_font_int=\count104
+\c__fp_leading_shift_int=\count105
+\c__fp_middle_shift_int=\count106
+\c__fp_trailing_shift_int=\count107
+\c__fp_big_leading_shift_int=\count108
+\c__fp_big_middle_shift_int=\count109
+\c__fp_big_trailing_shift_int=\count110
+\c__fp_Bigg_leading_shift_int=\count111
+\c__fp_Bigg_middle_shift_int=\count112
+\c__fp_Bigg_trailing_shift_int=\count113
+\g__fp_array_int=\count114
+\l__fp_array_loop_int=\count115
+\l__sort_length_int=\count116
+\l__sort_min_int=\count117
+\l__sort_top_int=\count118
+\l__sort_max_int=\count119
+\l__sort_true_max_int=\count120
+\l__sort_block_int=\count121
+\l__sort_begin_int=\count122
+\l__sort_end_int=\count123
+\l__sort_A_int=\count124
+\l__sort_B_int=\count125
+\l__sort_C_int=\count126
+\l__str_internal_int=\count127
+\l__tl_analysis_normal_int=\count128
+\l__tl_analysis_index_int=\count129
+\l__tl_analysis_nesting_int=\count130
+\l__tl_analysis_type_int=\count131
+\l__regex_internal_a_int=\count132
+\l__regex_internal_b_int=\count133
+\l__regex_internal_c_int=\count134
+\l__regex_balance_int=\count135
+\l__regex_group_level_int=\count136
+\l__regex_mode_int=\count137
+\c__regex_cs_in_class_mode_int=\count138
+\c__regex_cs_mode_int=\count139
+\l__regex_catcodes_int=\count140
+\l__regex_default_catcodes_int=\count141
+\c__regex_catcode_L_int=\count142
+\c__regex_catcode_O_int=\count143
+\c__regex_catcode_A_int=\count144
+\c__regex_all_catcodes_int=\count145
+\l__regex_show_lines_int=\count146
+\l__regex_min_state_int=\count147
+\l__regex_max_state_int=\count148
+\l__regex_left_state_int=\count149
+\l__regex_right_state_int=\count150
+\l__regex_capturing_group_int=\count151
+\l__regex_min_pos_int=\count152
+\l__regex_max_pos_int=\count153
+\l__regex_curr_pos_int=\count154
+\l__regex_start_pos_int=\count155
+\l__regex_success_pos_int=\count156
+\l__regex_curr_char_int=\count157
+\l__regex_curr_catcode_int=\count158
+\l__regex_last_char_int=\count159
+\l__regex_case_changed_char_int=\count160
+\l__regex_curr_state_int=\count161
+\l__regex_step_int=\count162
+\l__regex_min_active_int=\count163
+\l__regex_max_active_int=\count164
+\l__regex_replacement_csnames_int=\count165
+\l__regex_match_count_int=\count166
+\l__regex_min_submatch_int=\count167
+\l__regex_submatch_int=\count168
+\l__regex_zeroth_submatch_int=\count169
+\g__regex_trace_regex_int=\count170
+\c_empty_box=\box27
+\l_tmpa_box=\box28
+\l_tmpb_box=\box29
+\g_tmpa_box=\box30
+\g_tmpb_box=\box31
+\l__box_top_dim=\dimen110
+\l__box_bottom_dim=\dimen111
+\l__box_left_dim=\dimen112
+\l__box_right_dim=\dimen113
+\l__box_top_new_dim=\dimen114
+\l__box_bottom_new_dim=\dimen115
+\l__box_left_new_dim=\dimen116
+\l__box_right_new_dim=\dimen117
+\l__box_internal_box=\box32
+\l__coffin_internal_box=\box33
+\l__coffin_internal_dim=\dimen118
+\l__coffin_offset_x_dim=\dimen119
+\l__coffin_offset_y_dim=\dimen120
+\l__coffin_x_dim=\dimen121
+\l__coffin_y_dim=\dimen122
+\l__coffin_x_prime_dim=\dimen123
+\l__coffin_y_prime_dim=\dimen124
+\c_empty_coffin=\box34
+\l__coffin_aligned_coffin=\box35
+\l__coffin_aligned_internal_coffin=\box36
+\l_tmpa_coffin=\box37
+\l_tmpb_coffin=\box38
+\g_tmpa_coffin=\box39
+\g_tmpb_coffin=\box40
+\l__coffin_bounding_shift_dim=\dimen125
+\l__coffin_left_corner_dim=\dimen126
+\l__coffin_right_corner_dim=\dimen127
+\l__coffin_bottom_corner_dim=\dimen128
+\l__coffin_top_corner_dim=\dimen129
+\l__coffin_scaled_total_height_dim=\dimen130
+\l__coffin_scaled_width_dim=\dimen131
+\c__coffin_empty_coffin=\box41
+\l__coffin_display_coffin=\box42
+\l__coffin_display_coord_coffin=\box43
+\l__coffin_display_pole_coffin=\box44
+\l__coffin_display_offset_dim=\dimen132
+\l__coffin_display_x_dim=\dimen133
+\l__coffin_display_y_dim=\dimen134
+\g__char_data_ior=\read1
+
+! Interruption.
+l.0 1
+   
+l.28130   }
+         
+? 
+(/usr/share/texmf-dist/tex/latex/l3kernel/l3deprecation.def
+File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
+))
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-06-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count171
@@ -132,8 +280,34 @@ X
 
 (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+
+(/usr/share/texmf-dist/tex/latex/base/tuenc.def
+File: tuenc.def 2020/02/11 v2.0o Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
 )
-(/usr/share/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+! Undefined control sequence.
+l.115 \xdef\@fontenc@load@list{\@fontenc@load@list
+                                                
+? 
+! Interruption.
+l.116 
+      \@elt{\csname opt@fontenc.sty\endcsname}}
+? 
+)
+! Interruption.
+\__keyval_loop_other:NNw ...yval_split_active:w #3
+                                                  \s__keyval_nil \s__keyval_...
+l.3147 \newfontscript{Tai~Tham}{lana}
+                                   
+? 
+(/usr/share/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 3910.
+LaTeX Info: Redefining \slshape on input line 3910.
+LaTeX Info: Redefining \scshape on input line 3910.
+LaTeX Info: Redefining \upshape on input line 3910.
+LaTeX Info: Redefining \em on input line 3910.
+LaTeX Info: Redefining \emph on input line 3910.
+))
 (/usr/share/texmf-dist/tex/latex/clearsans/ClearSans.sty
 Package: ClearSans 2019/10/16 (Bob Tennent) Supports Clear-Sans fonts for all La
 TeX engines.
@@ -152,8 +326,8 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks15
-\XKV@tempa@toks=\toks16
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
 
 (/usr/share/texmf-dist/tex/generic/xkeyval/keyval.tex))
 \XKV@depth=\count187
@@ -161,8 +335,19 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+
+
+LaTeX Warning: You have requested release `2020/02/02' of LaTeX,
+               but only release `2019-10-01' is available.
+
 )
-luaotfload | aux : font no 29 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
  with language dflt
@@ -170,27 +355,20 @@ luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
  with language dflt
-luaotfload | aux : font no 29 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
  with language dflt
-luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 36 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
  with language dflt
-luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
  with language dflt
-luaotfload | aux : font no 35 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
  with language dflt
-luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
  with language dflt
-luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 38 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 30 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : font no 32 (nil) does not define feature smcp for script latn
- with language dflt)
-(/usr/share/texmf-dist/tex/latex/pstricks/pstricks.sty
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
+ with language dflt) (/usr/share/texmf-dist/tex/latex/pstricks/pstricks.sty
 Package: pstricks 2018/12/21 v0.69 LaTeX wrapper for `PSTricks' (RN,HV)
 
 (/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
@@ -235,17 +413,17 @@ File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
 \pstFP@times=\count196
 )
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks17
+\pgfutil@everybye=\toks16
 \pgfutil@tempdima=\dimen138
 \pgfutil@tempdimb=\dimen139
 
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks18
-\pgfkeys@temptoks=\toks19
+\pgfkeys@pathtoks=\toks17
+\pgfkeys@temptoks=\toks18
 
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks20
+\pgfkeys@tmptoks=\toks19
 ))
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Loading pgffor.code.tex
@@ -271,9 +449,9 @@ Loading pgffor.code.tex
 \pgfmath@dimen=\dimen148
 \pgfmath@count=\count269
 \pgfmath@box=\box46
-\pgfmath@toks=\toks21
-\pgfmath@stack@operand=\toks22
-\pgfmath@stack@operation=\toks23
+\pgfmath@toks=\toks20
+\pgfmath@stack@operand=\toks21
+\pgfmath@stack@operation=\toks22
 )
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
@@ -290,8 +468,8 @@ x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
 ))
 \pgffor@iter=\dimen149
 \pgffor@skip=\dimen150
-\pgffor@stack=\toks24
-\pgffor@toks=\toks25
+\pgffor@stack=\toks23
+\pgffor@toks=\toks24
 )
 \psLoopIndex=\count271
 
@@ -320,7 +498,7 @@ x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
 \pst@cnto=\count280
 \pst@cntp=\count281
 \@zero=\count282
-\pst@toks=\toks26
+\pst@toks=\toks25
 (/usr/share/texmf-dist/tex/generic/pstricks/pstricks.con)
 \psunit=\dimen161
 \psxunit=\dimen162
@@ -329,12 +507,12 @@ x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
 \pslinewidth=\dimen164
 \psk@startLW=\dimen165
 \psk@endLW=\dimen166
-\pst@customdefs=\toks27
+\pst@customdefs=\toks26
 \pslinearc=\dimen167
 \pst@symbolStep=\dimen168
 \pst@symbolWidth=\dimen169
 \pst@symbolLinewidth=\dimen170
-\everypsbox=\toks28
+\everypsbox=\toks27
 \psframesep=\dimen171
 \pslabelsep=\dimen172
 \sh@wgridXunit=\dimen173
@@ -352,14 +530,14 @@ Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
 (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex)
 luaotfload | cache : Lookup cache loaded from /home/gshimabuko/.texlive/texmf-va
 r/luatex-cache/generic-dev/names/luaotfload-lookup-cache.luc.
-luaotfload | aux : font no 40 (nil) defines no feature for script latn
-luaotfload | aux : font no 40 (nil) defines no feature for script dflt
+luaotfload | aux : font no 41 (nil) defines no feature for script latn
+luaotfload | aux : font no 41 (nil) defines no feature for script dflt
 (/usr/share/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-xeluatex.tex))
 (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks29
+\pgfutil@everybye=\toks28
 \pgfutil@tempdima=\dimen176
 \pgfutil@tempdimb=\dimen177
 
@@ -415,9 +593,9 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 \c@pgf@countb=\count285
 \c@pgf@countc=\count286
 \c@pgf@countd=\count287
-\t@pgf@toka=\toks30
-\t@pgf@tokb=\toks31
-\t@pgf@tokc=\toks32
+\t@pgf@toka=\toks29
+\t@pgf@tokb=\toks30
+\t@pgf@tokc=\toks31
 \pgf@sys@id@count=\count288
 
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
@@ -450,6 +628,13 @@ File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@picmaxx=\dimen191
 \pgf@picminy=\dimen192
 \pgf@picmaxy=\dimen193
+
+! Interruption.
+l.1 
+  \shellesc@write -1
+l.17 \newdimen\pgf@pathminx
+                         
+? 
 \pgf@pathminx=\dimen194
 \pgf@pathmaxx=\dimen195
 \pgf@pathminy=\dimen196
@@ -550,8 +735,8 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen272
 \pgffor@skip=\dimen273
-\pgffor@stack=\toks33
-\pgffor@toks=\toks34
+\pgffor@stack=\toks32
+\pgffor@toks=\toks33
 ))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
@@ -603,7 +788,7 @@ Grid set 16 x 16 = 38.39343pt x 49.68562pt
 \TPboxrulesize=\dimen287
 \TP@ox=\dimen288
 \TP@oy=\dimen289
-\TP@tbargs=\toks35
+\TP@tbargs=\toks34
 \TP@prevdepth=\dimen290
 TextBlockOrigin set to 0pt x 0pt
 ) (/usr/share/texmf-dist/tex/latex/ragged2e/ragged2e.sty
@@ -654,10 +839,10 @@ Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )))
 (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\enitkv@toks@=\toks36
+\enitkv@toks@=\toks35
 \labelindent=\skip63
 \enit@outerparindent=\dimen291
-\enit@toks=\toks37
+\enit@toks=\toks36
 \enit@inbox=\box62
 \enit@count@id=\count304
 \enitdp@description=\count305
@@ -675,7 +860,7 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-\pdftexcmds@toks=\toks38
+\pdftexcmds@toks=\toks37
 )
 (/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
@@ -779,9 +964,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip64
 )
 Package hyperref Info: Option `colorlinks' set `false' on input line 39.
+
+! Interruption.
+\__fontspec_primitive_font_set:NnnF ... #1{#2}{#3}
+                                                  \__fontspec_primitive_font...
+l.125 
+    
+? 
 \imagewidth=\skip65
 \imagescale=\skip66
-
 (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
@@ -799,7 +990,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen301
 \Gm@layouthoffset=\dimen302
 \Gm@layoutvoffset=\dimen303
-\Gm@dimlist=\toks39
+\Gm@dimlist=\toks38
 )
 (/usr/share/texmf-dist/tex/latex/smartdiagram/smartdiagram.sty
 Package: smartdiagram 2016/12/23 v0.3b Automatic creation of smart diagrams from
@@ -859,8 +1050,8 @@ de.tex)
 (/usr/share/texmf-dist/tex/latex/smartdiagram/smartdiagramlibrarycore.commands.
 code.tex))) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks40
-\inpenc@posthook=\toks41
+\inpenc@prehook=\toks39
+\inpenc@posthook=\toks40
 
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
@@ -871,6 +1062,23 @@ Package: babel 2020/05/13 3.44 The Babel package
 (/usr/share/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/05/13 3.44 Babel common definitions
 
+
+! LaTeX Error: Command \bbl@foreign@x already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.745   \endgroup}
+                
+? 
+! Interruption.
+\GenericError  ...                                
+                                                  \endgroup 
+l.745   \endgroup}
+                
+? 
 (/usr/share/texmf-dist/tex/generic/babel/luababel.def
 \bbl@readstream=\read3
 \l@dumylang=\language2
@@ -967,7 +1175,7 @@ Package babel Info: Non-standard hyphenation setup on input line 117.
 \l@babelnohyphens=\language87
 
 (/usr/share/texmf-dist/tex/generic/babel/luababel.def
-\bbl@attr@locale=\attribute4
+\bbl@attr@locale=\attribute5
 ))
 (/usr/share/texmf-dist/tex/generic/babel-portuges/portuguese.ldf
 Language: portuges 2020/05/04 v1.2r Portuguese support from the babel system
@@ -976,103 +1184,108 @@ Package babel Info: Making " an active character on input line 143.
 (/usr/share/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-pt.tex
 UTF-8 Portuguese hyphenation patterns
 (/usr/share/texmf-dist/tex/generic/hyph-utf8/patterns/tex/hyph-pt.tex))))
-(./main_UTF8.aux)
-\openout1 = main_UTF8.aux
+! String contains an invalid utf-8 sequence.
+l.45 2011 - 2019 | Bras
+                     �lilia, Brazil
+? 
+! String contains an invalid utf-8 sequence.
+l.58 N
+    cleo Bandeirante
+? 
+! String contains an invalid utf-8 sequence.
+l.62 Bras
+       �lilia, DF - Brasil}
+? 
+(./main.aux)
+\openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 62
-.
- (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
 LaTeX Font Info:    Font shape `TU/ClearSans(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 62.
+(Font)              scaled to size 10.0pt on input line 68.
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 62.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 62.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 62.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 62.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 62.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 62.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 62.
-LaTeX Font Info:    Redeclaring math accent \check on input line 62.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 62.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 62.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 62.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 62.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 62.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 62.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 62.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 62.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 62.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 62.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 62.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 62.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 62.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 62.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 62.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 62.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 62.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 68.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 68.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 68.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 68.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 68.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 68.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 68.
+LaTeX Font Info:    Redeclaring math accent \check on input line 68.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 68.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 68.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 68.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 68.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 62.
+(Font)              `operators' in the math version `normal' on input line 68.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 62.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 68.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 62.
+(Font)              `operators' in the math version `bold' on input line 68.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 62.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 68.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 62.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 68.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 62.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 68.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 62.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 68.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/ClearSans(0)/m/n on input line 62.
+(Font)                  OT1/cmss/m/n --> TU/ClearSans(0)/m/n on input line 68.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 62.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 68.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 62.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 68.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 62.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 68.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/ClearSans(0)/b/n on input line 62.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 62.
+(Font)                  OT1/cmss/bx/n --> TU/ClearSans(0)/bx/n on input line 68.
 
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 68.
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count322
 \scratchdimen=\dimen305
 \scratchbox=\box67
 \nofMPsegments=\count323
 \nofMParguments=\count324
-\everyMPshowfont=\toks42
+\everyMPshowfont=\toks41
 \MPscratchCnt=\count325
 \MPscratchDim=\dimen306
 \MPnumerator=\count326
 \makeMPintoPDFobject=\count327
-\everyMPtoPDFconversion=\toks43
+\everyMPtoPDFconversion=\toks42
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
@@ -1091,9 +1304,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
 ABD: EveryShipout initializing macros ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 62.
+LaTeX Info: Redefining \selectfont on input line 68.
 \AtBeginShipoutBox=\box68
-Package hyperref Info: Link coloring OFF on input line 62.
+Package hyperref Info: Link coloring OFF on input line 68.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1106,14 +1319,14 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count328
 )
-LaTeX Info: Redefining \ref on input line 62.
-LaTeX Info: Redefining \pageref on input line 62.
-LaTeX Info: Redefining \nameref on input line 62.
+LaTeX Info: Redefining \ref on input line 68.
+LaTeX Info: Redefining \pageref on input line 68.
+LaTeX Info: Redefining \nameref on input line 68.
 
-(./main_UTF8.out) (./main_UTF8.out)
+(./main.out) (./main.out)
 \@outlinefile=\write4
 
-\openout4 = main_UTF8.out
+\openout4 = main.out
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1150,81 +1363,55 @@ LaTeX Info: Redefining \nameref on input line 62.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `TU/ClearSans(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 64.
+(Font)              scaled to size 20.74pt on input line 70.
 LaTeX Font Info:    Font shape `TU/ClearSans(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 64.
+(Font)              scaled to size 12.0pt on input line 70.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 64.
+(Font)              <7> on input line 70.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 64.
+(Font)              <5> on input line 70.
 
-LaTeX Font Warning: Command \huge invalid in math mode on input line 64.
+LaTeX Font Warning: Command \huge invalid in math mode on input line 70.
 
 
-Overfull \hbox (1.80507pt too wide) in paragraph at lines 64--64
+Overfull \hbox (1.80507pt too wide) in paragraph at lines 70--70
 []$[]$| 
  []
 
 
-LaTeX Font Warning: Command \huge invalid in math mode on input line 64.
+LaTeX Font Warning: Command \huge invalid in math mode on input line 70.
 
 
-Overfull \hbox (9.40044pt too wide) in paragraph at lines 64--64
+Overfull \hbox (6.43462pt too wide) in paragraph at lines 70--70
 []$[]$| 
  []
 
 
-Overfull \hbox (14.22643pt too wide) in paragraph at lines 64--64
+LaTeX Font Warning: Command \Large invalid in math mode on input line 70.
+
+LaTeX Font Info:    Font shape `TU/ClearSans(0)/m/n' will be
+(Font)              scaled to size 14.4pt on input line 70.
+
+Overfull \hbox (4.48306pt too wide) in paragraph at lines 70--70
+[]$[]$| 
+ []
+
+
+Overfull \hbox (14.22643pt too wide) in paragraph at lines 70--70
 [][] 
  []
 
-LaTeX Font Info:    Font shape `TU/ClearSans(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 64.
-LaTeX Font Info:    Font shape `TU/ClearSans(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 64.
+! String contains an invalid utf-8 sequence.
+l.74 ...ower}{BP 72329}{31023 Toulouse cedex 1}{Bras
+                                                  �lilia, 01/07/2020}
+? 
 
-Overfull \hbox (16.37286pt too wide) in paragraph at lines 64--64
-[][] 
- []
-
-LaTeX Font Info:    Font shape `TU/ClearSans(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 64.
-LaTeX Font Info:    Font shape `TU/ClearSans(0)/b/it' will be
-(Font)              scaled to size 10.0pt on input line 64.
-
-Overfull \hbox (3.41277pt too wide) in paragraph at lines 64--64
-\TU/ClearSans(0)/b/it/10 - Uni-ver-sity of Co-lo-rado Boul-der \TU/ClearSans(0)
-/m/n/10 is-sued
- []
-
-
-Overfull \hbox (0.69467pt too wide) in paragraph at lines 64--64
-\TU/ClearSans(0)/b/it/10 Sys-tems - Uni-ver-sity of Co-lo-rado Boul-
- []
-
-LaTeX Font Info:    Font shape `TU/ClearSans(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 70.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 73.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 73.
-LaTeX Font Info:    Font shape `TU/ClearSans(0)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 86.
-LaTeX Font Info:    Font shape `TU/ClearSans(0)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 86.
-LaTeX Font Info:    Font shape `TU/ClearSans(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 86.
-LaTeX Font Info:    Font shape `TU/ClearSans(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 86.
-LaTeX Font Info:    Font shape `TU/ClearSans(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 86.
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--128
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--143
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
@@ -1238,121 +1425,39 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-Missing character: There is no  (U+0080) in font [ClearSans-Bold.ttf]:mode=nod
-e;script=latn;language=dflt;+tlig;!
-Missing character: There is no  (U+0093) in font [ClearSans-Bold.ttf]:mode=nod
-e;script=latn;language=dflt;+tlig;!
-Missing character: There is no  (U+0080) in font [ClearSans-Bold.ttf]:mode=nod
-e;script=latn;language=dflt;+tlig;!
-Missing character: There is no  (U+0093) in font [ClearSans-Bold.ttf]:mode=nod
-e;script=latn;language=dflt;+tlig;!
-Missing character: There is no  (U+0080) in font [ClearSans-Italic.ttf]:mode=n
-ode;script=latn;language=dflt;+tlig;!
-Missing character: There is no  (U+0093) in font [ClearSans-Italic.ttf]:mode=n
-ode;script=latn;language=dflt;+tlig;!
-Missing character: There is no  (U+0080) in font [ClearSans-Italic.ttf]:mode=n
-ode;script=latn;language=dflt;+tlig;!
-Missing character: There is no  (U+0093) in font [ClearSans-Italic.ttf]:mode=n
-ode;script=latn;language=dflt;+tlig;!
-Missing character: There is no  (U+0080) in font [ClearSans-Italic.ttf]:mode=n
-ode;script=latn;language=dflt;+tlig;!
-Missing character: There is no  (U+0093) in font [ClearSans-Italic.ttf]:mode=n
-ode;script=latn;language=dflt;+tlig;!
+Missing character: There is no � (U+FFFD) in font [ClearSans-Regular.ttf]:mode
+=node;script=latn;language=dflt;+tlig;!
+Missing character: There is no � (U+FFFD) in font [ClearSans-Regular.ttf]:mode
+=node;script=latn;language=dflt;+tlig;!
+Missing character: There is no � (U+FFFD) in font [ClearSans-Regular.ttf]:mode
+=node;script=latn;language=dflt;+tlig;!
 ]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
 
-LaTeX Font Warning: Command \Huge invalid in math mode on input line 145.
-
-LaTeX Font Info:    Font shape `TU/ClearSans(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 145.
-
-Overfull \hbox (3.57698pt too wide) in paragraph at lines 145--145
-[]$[]$| 
- []
-
-
-LaTeX Font Warning: Command \huge invalid in math mode on input line 145.
-
-
-Overfull \hbox (9.40044pt too wide) in paragraph at lines 145--145
-[]$[]$| 
- []
-
-
-Overfull \hbox (14.22643pt too wide) in paragraph at lines 145--145
-[][] 
- []
-
-
-Overfull \hbox (7.64145pt too wide) in paragraph at lines 145--145
-\TU/ClearSans(0)/m/n/9 Exchange Pro-gramme - Sci-ence Without Bor-
- []
-
-
-Overfull \hbox (5.20412pt too wide) in paragraph at lines 145--145
-[]\TU/ClearSans(0)/m/n/14.4 Cer-ti-fi-ca-tes [][] 
- []
-
-LaTeX Font Info:    Font shape `TU/ClearSans(0)/b/it' will be
-(Font)              scaled to size 9.0pt on input line 145.
-
-Overfull \hbox (0.4pt too wide) in paragraph at lines 145--145
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 145--145
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--156
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--166
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
-
- []
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 185.
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
- (./main_UTF8.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
-Package rerunfilecheck Info: File `main_UTF8.out' has not changed.
+(./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
+Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 29335 strings out of 480885
- 100000,1144653 words of node,token memory allocated
- 1556 words of node memory still in use:
-   33 hlist, 1 vlist, 10 rule, 21 glue, 3 kern, 1 glyph, 102 attribute, 66 glue_
-spec, 98 attribute_list, 2 write, 39 pdf_literal, 18 pdf_colorstack nodes
-   avail lists: 1:1,2:3278,3:511,4:171,5:660,6:48,7:7402,8:5,9:405,10:30,11:794
- 45901 multiletter control sequences out of 65536+600000
- 86 fonts using 12897755 bytes
- 66i,17n,84p,944b,684s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf-dist/fonts/truetype/intel/clearsans/ClearSans-BoldItalic.ttf><
-/usr/share/texmf-dist/fonts/opentype/public/fontawesome/FontAwesome.otf></usr/sh
-are/texmf-dist/fonts/truetype/intel/clearsans/ClearSans-Italic.ttf></usr/share/t
-exmf-dist/fonts/truetype/intel/clearsans/ClearSans-Bold.ttf></usr/share/texmf-di
-st/fonts/truetype/intel/clearsans/ClearSans-Regular.ttf></usr/share/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on main_UTF8.pdf (2 pages, 97962 bytes).
+ 41329 strings out of 493864
+ 100000,953878 words of node,token memory allocated
+ 1553 words of node memory still in use:
+   33 hlist, 1 vlist, 10 rule, 21 glue, 3 kern, 1 glyph, 102 attribute, 65 glue_
+spec, 99 attribute_list, 2 write, 39 pdf_literal, 18 pdf_colorstack nodes
+   avail lists: 1:2,2:557,3:128,4:23,5:197,6:24,7:2168,8:4,9:157,10:11,11:200
+ 44749 multiletter control sequences out of 65536+600000
+ 63 fonts using 11980695 bytes
+ 66i,17n,84p,936b,2145s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf-dist/fonts/opentype/public/fontawesome/FontAwesome.otf></usr/s
+hare/texmf-dist/fonts/truetype/intel/clearsans/ClearSans-Regular.ttf>
+Output written on main.pdf (1 page, 20249 bytes).
 
-PDF statistics: 102 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 131072)
+PDF statistics: 59 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 131072)
  196 words of extra memory for PDF output out of 10000 (max. 100000000)
 
