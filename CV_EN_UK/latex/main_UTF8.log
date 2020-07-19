@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/Arch Linux)  (format=lualatex 2020.7.16)  18 JUL 2020 22:32
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/Arch Linux)  (format=lualatex 2020.7.16)  18 JUL 2020 22:35
  restricted system commands enabled.
 **./main_UTF8.tex
 (./main_UTF8.tex
@@ -1316,7 +1316,7 @@ Here is how much of LuaTeX's memory you used:
  1556 words of node memory still in use:
    33 hlist, 1 vlist, 10 rule, 21 glue, 3 kern, 1 glyph, 102 attribute, 66 glue_
 spec, 98 attribute_list, 2 write, 39 pdf_literal, 18 pdf_colorstack nodes
-   avail lists: 1:1,2:3281,3:514,4:171,5:660,6:48,7:7402,8:5,9:406,10:30,11:794
+   avail lists: 1:1,2:3281,3:514,4:171,5:660,6:48,7:7401,8:5,9:406,10:30,11:795
  45901 multiletter control sequences out of 65536+600000
  86 fonts using 12897755 bytes
  66i,17n,84p,944b,684s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1328,7 +1328,7 @@ st/fonts/truetype/intel/clearsans/ClearSans-Regular.ttf></usr/share/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on main_UTF8.pdf (2 pages, 97738 bytes).
+Output written on main_UTF8.pdf (2 pages, 97931 bytes).
 
 PDF statistics: 102 PDF objects out of 1000 (max. 8388607)
  60 compressed objects within 1 object stream
